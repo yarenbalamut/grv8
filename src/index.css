@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#emojiButton {
+    position: relative;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+  
+#emojiButton:hover {
+    background-color: rgba(215, 213, 213, 0.933);
+}
+
+#emojiButton:hover::after {
+    content: "Emoji'yi kopyala";
+    color: gray;
+    position: absolute;
+    top: 20%; 
+    right: 0;
+    font-size: 12px;
+    padding: 5px;
+}
+  
+  
